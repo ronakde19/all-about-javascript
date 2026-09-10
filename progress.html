@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Download Bar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+    }
+
+    .download-bar {
+      width: 420px;
+      padding: 20px;
+      border-radius: 18px;
+
+      /* Glassmorphism */
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .file-name {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .percentage {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .progress {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .status {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    button {
+      border: none;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="download-bar">
+
+    <div class="top">
+      <span class="file-name">project.zip</span>
+      <span class="percentage"> 65%</span>
+    </div>
+
+    <div class="progress">
+      <div class="progress-fill"></div>
+    </div>
+
+    <div class="bottom">
+      <span class="status">Downloading...</span>
+    </div>
+
+  </div>
+  <script src="progress.js"></script>
+
+</body>
+</html>
