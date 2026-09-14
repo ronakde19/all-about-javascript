@@ -1,4 +1,4 @@
-let count = 10;
+let count = 100;
 
 let interval = setInterval(function(){
     if (count>=0){
