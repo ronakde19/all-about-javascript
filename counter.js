@@ -5,4 +5,4 @@ let interval = setInterval(function(){
         console.log(count);
         count--;
     } else clearInterval(interval);
-},1000);
+}, 1000);
