@@ -1,4 +1,4 @@
-// reverse of a number 
+// reverse of a number using loop
 
 let num = 12345;
 let rev = 0;
