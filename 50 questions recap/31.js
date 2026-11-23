@@ -2,6 +2,6 @@
 
 let fact = (val) => {
     let ans = 0;
-    for
+    for (let )
 
 }
